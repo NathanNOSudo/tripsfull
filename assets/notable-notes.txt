@@ -1,0 +1,1 @@
+renamed handlebars in node_modules/.bin to fix 5 high risk vulnerabilitys. Same file is in .bin at root instead.
