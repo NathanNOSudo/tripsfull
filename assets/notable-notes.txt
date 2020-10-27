@@ -1,1 +1,21 @@
-renamed handlebars in node_modules/.bin to fix 5 high risk vulnerabilitys. Same file is in .bin at root instead.
+Ran a audit and renamed handlebars.js in node_modules/.bin to fix 5 high risk vulnerabilitys. Same file is in .bin at root instead.
+
+DB examples: /* CRUD C = CREATE  R = READ  U = UPDATE  D = DELETE  
+
+*//*CREATE TABLE 
+
+users (      /* Schema of the table */    
+user_id SERIAL PRIMARY KEY,     
+first_name varchar(50) NOT NULL, 	
+last_name varchar(50) NOT NULL, 	
+age INT NOT NULL ); 
+
+*/-- INSERT a user into users table  
+--INSERT INTO users(first_name, last_name, age) VALUES('George', 'Doe', 45); 
+-- FETCH all records from the users table 
+--SELECT * FROM users; 
+--SELECT user_id, first_name, last_name, age FROM users; 
+--SELECT user_id, last_name, first_name FROM users;
+-- SELECT * FROM users LIMIT 5; 
+-- return only users where age is greator then 20 
+SELECT user_id, first_name, last_name, age FROM users WHERE age > 20;
